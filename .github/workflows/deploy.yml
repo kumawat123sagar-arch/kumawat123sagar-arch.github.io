@@ -1,0 +1,49 @@
+name: Build CV and deploy site
+
+# Runs on every change, every Monday (to pick up newly published papers), or on demand.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render CV to PDF (adds new papers from OpenAlex)
+        run: |
+          google-chrome --headless=new --no-sandbox --disable-gpu \
+            --no-pdf-header-footer --run-all-compositor-stages-before-draw \
+            --virtual-time-budget=20000 \
+            --print-to-pdf="$GITHUB_WORKSPACE/Sagar-Mal-Kumawat-CV.pdf" \
+            "file://$GITHUB_WORKSPACE/cv.html"
+          ls -l Sagar-Mal-Kumawat-CV.pdf
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
