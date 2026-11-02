@@ -2,6 +2,8 @@
 
 Personal website: https://kumawat123sagar-arch.github.io
 
-Magnetic R&D Engineer at LinkCom Manufacturing Co., Ltd. | Ph.D. in Physics
+- `index.html`: the website
+- `pubs.js`: adds newly published papers automatically (from OpenAlex, which mirrors Google Scholar journal records)
+- `cv.html`: CV source. GitHub Actions turns it into `Sagar-Mal-Kumawat-CV.pdf` on every change and every Monday, so the downloadable CV picks up new papers too.
 
-To update the site, edit `index.html` and commit; GitHub Pages republishes automatically.
+To edit anything, open the file on GitHub, click the pencil icon, and commit. The site redeploys in about a minute.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr. Sagar Mal Kumawat | Magnetic R&amp;D Engineer, Ph.D. Physics</title>
-<meta name="description" content="Dr. Sagar Mal Kumawat is a Magnetic R&amp;D Engineer at LinkCom Manufacturing in Taiwan, designing high-frequency transformers and coupled inductors for power electronics. Ph.D. in Physics (NSYSU), former postdoctoral fellow at NCKU, 14 peer-reviewed papers.">
+<meta name="description" content="Dr. Sagar Mal Kumawat is a Magnetic R&amp;D Engineer at LinkCom Manufacturing in Taiwan, designing high-frequency transformers and coupled inductors for power electronics. Ph.D. in Physics (NSYSU), former postdoctoral fellow at NCKU, 15 peer-reviewed papers.">
 <meta name="author" content="Sagar Mal Kumawat">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Dr. Sagar Mal Kumawat | Magnetic R&amp;D Engineer">
@@ -85,7 +85,7 @@ header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--b
 .hero::before{content:"";position:absolute;inset:0;background:
   radial-gradient(700px 360px at 85% -10%,rgba(242,166,90,.22),transparent 60%),
   radial-gradient(600px 400px at -10% 120%,rgba(95,140,255,.22),transparent 60%)}
-.hero svg.field{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:560px;max-width:70%;opacity:.16;pointer-events:none}
+.hero .hero-art{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:640px;opacity:.5;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 20%,#000 60%);mask-image:linear-gradient(to right,transparent 20%,#000 60%)}
 .hero .wrap{position:relative;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:64px}
 .photo{width:184px;height:184px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.9);box-shadow:0 10px 40px rgba(0,0,0,.35);background:#e8eaf0}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#f6c08e;background:rgba(242,166,90,.12);border:1px solid rgba(242,166,90,.35);padding:5px 11px;border-radius:999px}
@@ -175,6 +175,7 @@ section.block{padding:72px 0 8px}
 .pub .j{font-size:.9rem;color:var(--ink-2);margin-top:2px}
 .pub .j i{font-style:italic}
 .pub .badge{display:inline-block;margin-left:6px;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);vertical-align:1px}
+.pub .badge.new{background:var(--copper-soft);color:var(--copper)}
 .pub .lnk{font-size:.82rem;font-weight:600;white-space:nowrap;padding:5px 10px;border:1px solid var(--line);border-radius:8px;color:var(--ink-2)}
 .pub .lnk:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
 .more-pubs{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:18px 22px;background:var(--surface-2);border-top:1px solid var(--line);border-radius:0 0 var(--radius) var(--radius);font-size:.93rem;color:var(--ink-2)}
@@ -234,13 +235,13 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
   .job::before{left:-23px}
   .contact{padding:26px 20px}
   .about .card,.exp,.tools,.list-card,.edu{padding:20px}
-  .hero svg.field{opacity:.07}
+  .hero .hero-art{opacity:.16;width:560px;right:-230px}
   section.block{padding-top:56px}
   .sec-head{flex-wrap:wrap}
   .sec-head p{margin-left:0;width:100%}
 }
 @media print{
-  header.nav,.theme-btn,.actions,.hero svg.field{display:none}
+  header.nav,.theme-btn,.actions,.hero .hero-art{display:none}
   .hero{background:#fff;color:#000}
   .hero h1,.hero .role b{color:#000}
   .card{box-shadow:none}
@@ -271,11 +272,7 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
 
 <main id="top">
 <section class="hero">
-  <svg class="field" viewBox="0 0 400 400" fill="none" stroke="#f2a65a" stroke-width="1.4" aria-hidden="true">
-    <ellipse cx="200" cy="200" rx="40" ry="180"/><ellipse cx="200" cy="200" rx="80" ry="180"/><ellipse cx="200" cy="200" rx="120" ry="180"/><ellipse cx="200" cy="200" rx="160" ry="180"/><ellipse cx="200" cy="200" rx="198" ry="180"/>
-    <rect x="160" y="150" width="80" height="100" rx="8" stroke="#ffffff" stroke-width="2"/>
-    <path d="M150 165h100M150 185h100M150 205h100M150 225h100" stroke="#ffffff" stroke-width="1.6"/>
-  </svg>
+  <img class="hero-art" src="hero-art.svg" alt="" aria-hidden="true">
   <div class="wrap">
     <img class="photo" src="photo.webp" alt="Portrait of Dr. Sagar Mal Kumawat" width="184" height="184">
     <div>
@@ -286,6 +283,8 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
       <div class="actions">
         <a class="btn primary" href="mailto:kumawat123sagar@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Get in touch</a>
+        <a class="btn ghost" href="Sagar-Mal-Kumawat-CV.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>Download CV</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/sagar-mal-kumawat-509b05a8/" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.16-.02-2.65-1.61-2.65-1.62 0-1.87 1.26-1.87 2.56v4.93h-4z"/></svg>LinkedIn</a>
         <a class="btn ghost" href="https://scholar.google.com/citations?user=quTwk7AAAAAJ&amp;hl=en" target="_blank" rel="noopener">
@@ -297,7 +296,7 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
 
 <div class="wrap">
   <div class="stats" role="list">
-    <div class="stat" role="listitem"><b>14</b><span>Peer-reviewed journal papers</span></div>
+    <div class="stat" role="listitem"><b data-count>15</b><span>Peer-reviewed journal papers</span></div>
     <div class="stat" role="listitem"><b>7+ yrs</b><span>Research in magnetism &amp; materials</span></div>
     <div class="stat" role="listitem"><b>Top 5%</b><span>Ph.D. Physics, NSYSU (GPA 3.93/4.3)</span></div>
     <div class="stat" role="listitem"><b>Full loop</b><span>Calculation → simulation → prototype → test</span></div>
@@ -422,21 +421,27 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
 
   <!-- PUBLICATIONS -->
   <section class="block" id="publications">
-    <div class="sec-head"><span class="num">04</span><h2>Selected publications</h2><p>14 journal articles · 1 conference proceeding</p></div>
+    <div class="sec-head"><span class="num">04</span><h2>Selected publications</h2><p><span data-count>15</span> journal articles · 1 conference proceeding</p></div>
     <div class="card pubs">
-      <div class="pub"><span class="yr">2026</span><div><div class="t">Interplay of spin-charge coupling and enhanced magnetodielectric effects in Ba<sub>0.5</sub>La<sub>0.5</sub>Ti<sub>0.5</sub>Mn<sub>0.5</sub>O<sub>3</sub> perovskite oxide<span class="badge">Corresponding author</span></div><div class="a"><b>S. M. Kumawat</b> et al.</div><div class="j"><i>Journal of Alloys and Compounds</i> 1059, 186973</div></div><span></span></div>
-      <div class="pub"><span class="yr">2025</span><div><div class="t">Complex magnetic properties in double perovskite Hg<sub>2</sub>MnTeO<sub>6</sub> probed by thermodynamic measurements and neutron diffraction<span class="badge">Equal first author</span></div><div class="a">E.-P. Liu*, <b>S. M. Kumawat</b>* et al.</div><div class="j"><i>Physical Review B</i> 112, 104436</div></div><span></span></div>
-      <div class="pub"><span class="yr">2025</span><div><div class="t">Possible Bose–Einstein condensation of magnons in an S = 5/2 honeycomb lattice</div><div class="a">J. Khatua, <b>S. M. Kumawat</b>, G. Senthil Murugan, C.-L. Huang, H.-S. Kim, K. Sritharan, R. Sankar, K.-Y. Choi</div><div class="j"><i>Physical Review B</i> 112, 134422</div></div><a class="lnk" href="https://doi.org/10.1103/8wdy-2zbw" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2023</span><div><div class="t">Magnetic field enhancement in critical current density and possible triplet superconductivity in LSMO/YBCO/LSMO heterostructures</div><div class="a"><b>S. M. Kumawat</b>, G. D. Dwivedi, P. F. Su, W. S. Shyu, Y. H. Chien, P. W. Su, C. M. Chung, N. D. B. Fernandez, S. J. Sun, C. H. Hsu, S. Yang, H. Chou</div><div class="j"><i>The Journal of Physical Chemistry C</i> 127, 6861–6872</div></div><a class="lnk" href="https://doi.org/10.1021/acs.jpcc.2c08620" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2023</span><div><div class="t">Switching of dominant magnetic exchange interaction between tetrahedral–octahedral and octahedral–octahedral sites in (Mn<sub>1-x</sub>Cr<sub>x</sub>)<sub>3</sub>O<sub>4</sub> spinels</div><div class="a">G. D. Dwivedi, T. W. Yen, <b>S. M. Kumawat</b>, C. W. Wang, D. C. Kakarla, A. Tiwari, H. D. Yang, S. M. Huang, C. M. Chung, S. J. Sun, H. Chou</div><div class="j"><i>Journal of Materials Chemistry C</i> 11, 11312–11324</div></div><a class="lnk" href="https://doi.org/10.1039/D3TC01734F" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2022</span><div><div class="t">Possible half-metallicity and suppressed double-exchange interaction in spinel Mn<sub>2.4</sub>Ni<sub>0.6</sub>O<sub>4</sub>: a Ni-substitution effect</div><div class="a"><b>S. M. Kumawat</b>, G. D. Dwivedi, T. W. Yen, D. C. Kakarla, A. Tiwari, S. M. Huang, S. J. Sun, H. D. Yang, H. Chou</div><div class="j"><i>Journal of Alloys and Compounds</i> 919, 165777</div></div><a class="lnk" href="https://doi.org/10.1016/j.jallcom.2022.165777" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2022</span><div><div class="t">Understanding the structural behaviors and abrupt enhancement in magnetic ordering temperature of Fe-substituted Mn<sub>3</sub>O<sub>4</sub></div><div class="a"><b>S. M. Kumawat</b>, G. D. Dwivedi, Y. H. Chien, P. F. Su, Z. H. Huang, H. Chou</div><div class="j"><i>Materials Research Bulletin</i> 154, 111928</div></div><a class="lnk" href="https://doi.org/10.1016/j.materresbull.2022.111928" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2021</span><div><div class="t">Correlating X-ray absorption spectra and ultraviolet photoelectron spectra to understand magnetic and transport properties of charge-ordered perovskite manganite</div><div class="a">G. D. Dwivedi, <b>S. M. Kumawat</b>, W. S. Shyu, Y. H. Chien, P. F. Su, Z. H. Huang, H. Chou, S. Chatterjee</div><div class="j"><i>Applied Surface Science</i> 569, 151131</div></div><a class="lnk" href="https://doi.org/10.1016/j.apsusc.2021.151131" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2021</span><div><div class="t">Understanding the correlation between orbital degree of freedom, lattice-striction, and magneto-dielectric coupling in ferrimagnetic Mn<sub>1.5</sub>Cr<sub>1.5</sub>O<sub>4</sub></div><div class="a">G. D. Dwivedi, <b>S. M. Kumawat</b>, T.-W. Yen, C. W. Wang, D. C. Kakarla, A. G. Joshi, H. D. Yang, S.-M. Huang, H. Chou</div><div class="j"><i>Journal of Physics: Condensed Matter</i> 33, 505802</div></div><a class="lnk" href="https://doi.org/10.1088/1361-648X/ac28c3" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2020</span><div><div class="t">Magnetic frustration induced liquid-like short-range ordering in cubic Mn<sub>1.5</sub>Cr<sub>1.5</sub>O<sub>4</sub></div><div class="a">G. D. Dwivedi, C.-W. Wang, <b>S. M. Kumawat</b>, H. Chou</div><div class="j"><i>Applied Physics Letters</i> 116, 182406</div></div><a class="lnk" href="https://doi.org/10.1063/1.5145185" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2019</span><div><div class="t">Neutron diffraction studies on temperature-driven crystallographic anisotropy in FeVO<sub>4</sub> multiferroic: evidence of strong magnetostructural correlations</div><div class="a">A. Tiwari, <b>S. M. Kumawat</b>, S. Rayaprol, A. Dixit</div><div class="j"><i>AIP Conference Proceedings</i> (DAE Solid State Physics Symposium)</div></div><a class="lnk" href="https://doi.org/10.1063/1.5113365" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="pub"><span class="yr">2018</span><div><div class="t">Enhancement in photocatalytic response of inorganic–organic BiVO<sub>4</sub>/C<sub>3</sub>N<sub>4</sub> composite system</div><div class="a">B. Purohit, <b>S. M. Kumawat</b>, A. Dixit</div><div class="j"><i>Materials Research Express</i> 5, 024001</div></div><a class="lnk" href="https://doi.org/10.1088/2053-1591/aaa804" target="_blank" rel="noopener">DOI ↗</a></div>
-      <div class="more-pubs"><span><b>In preparation:</b> Magnetic structure of a geometrically frustrated Mn<sub>3</sub>V<sub>2</sub>Ge<sub>3</sub>O<sub>12</sub> garnet oxide. * equal contribution.</span><a href="https://scholar.google.com/citations?user=quTwk7AAAAAJ&amp;hl=en" target="_blank" rel="noopener">Full list on Google Scholar ↗</a></div>
+     <div id="pubList">
+      <div class="pub" data-doi="10.1103/8xvq-6p3v" data-date="2026-10-01"><span class="yr">2026</span><div><div class="t">Magnetic structure of Mn<sub>3</sub>V<sub>2</sub>Ge<sub>3</sub>O<sub>12</sub> garnet oxide<span class="badge">First author</span></div><div class="a"><b>S. M. Kumawat</b>, T.-L. Liu, C.-W. Wang, S.-P. Kuo, J.-X. Hsu, E.-P. Liu, W.-Y. Hsieh, W.-T. Chen, C.-C. Lee, C.-L. Huang</div><div class="j"><i>Physical Review B</i> 114, 214411</div></div><a class="lnk" href="https://doi.org/10.1103/8xvq-6p3v" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1103/nv1l-dgv9" data-date="2026-03-01"><span class="yr">2026</span><div><div class="t">Multistage spin correlations in the S = 1/2 stuffed hyper-star lattice Li<sub>2</sub>Cu<sub>2</sub>(MoO<sub>4</sub>)<sub>3</sub></div><div class="a">J. Khatua, T. Kim, G. Senthil Murugan, <b>S. M. Kumawat</b>, C.-L. Huang, Y. Oshima, H. Nojiri, G. Morris, S. R. Dunsiger, H.-S. Kim, K. Sritharan, S. Mani, R. Sankar, K.-Y. Choi</div><div class="j"><i>Physical Review B</i> 113, 104441</div></div><a class="lnk" href="https://doi.org/10.1103/nv1l-dgv9" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1016/j.jallcom.2026.186973" data-date="2026-02-26"><span class="yr">2026</span><div><div class="t">Interplay of spin-charge coupling and enhanced magnetodielectric effects in Ba<sub>0.5</sub>La<sub>0.5</sub>Ti<sub>0.5</sub>Mn<sub>0.5</sub>O<sub>3</sub> perovskite oxide<span class="badge">Corresponding author</span></div><div class="a"><b>S. M. Kumawat</b>, G. D. Dwivedi, A. Tiwari, S.-Y. Chen, E.-P. Liu, J.-X. Hsu, D. C. Kakarla, Y.-C. Lai, Y.-C. Chuang, H.-D. Yang, H. Chou, W.-T. Chen, C.-L. Huang</div><div class="j"><i>Journal of Alloys and Compounds</i> 1059, 186973</div></div><a class="lnk" href="https://doi.org/10.1016/j.jallcom.2026.186973" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1103/8wdy-2zbw" data-date="2025-10-01"><span class="yr">2025</span><div><div class="t">Possible Bose–Einstein condensation of magnons in an S = 5/2 honeycomb lattice</div><div class="a">J. Khatua, <b>S. M. Kumawat</b>, G. Senthil Murugan, C.-L. Huang, H.-S. Kim, K. Sritharan, R. Sankar, K.-Y. Choi</div><div class="j"><i>Physical Review B</i> 112, 134422</div></div><a class="lnk" href="https://doi.org/10.1103/8wdy-2zbw" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1103/3tqn-jrsq" data-date="2025-09-01"><span class="yr">2025</span><div><div class="t">Complex magnetic properties of the double perovskite Hg<sub>2</sub>MnTeO<sub>6</sub> probed by thermodynamic measurements and neutron diffraction<span class="badge">Equal first author</span></div><div class="a">E.-P. Liu*, <b>S. M. Kumawat</b>*, C.-C. Lee, T.-H. Liu, A. M. Arévalo-López, W.-T. Chen, C.-L. Huang</div><div class="j"><i>Physical Review B</i> 112, 104436</div></div><a class="lnk" href="https://doi.org/10.1103/3tqn-jrsq" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1103/physrevb.110.214413" data-date="2024-12-01"><span class="yr">2024</span><div><div class="t">Modulation of magnetic and multiferroic properties by chemical substitution in Fe<sub>2</sub>(MoO<sub>4</sub>)<sub>3</sub></div><div class="a">A. Tiwari, D. C. Kakarla, C. E. Lu, G. D. Dwivedi, … , <b>S. M. Kumawat</b>, H. Chou, C.-L. Huang, H. D. Yang</div><div class="j"><i>Physical Review B</i> 110, 214413</div></div><a class="lnk" href="https://doi.org/10.1103/PhysRevB.110.214413" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1016/j.jallcom.2024.173651" data-date="2024-04-25"><span class="yr">2024</span><div><div class="t">Role of p–d hybridization in structural transition and magnetic properties of Co-substituted Mn<sub>3</sub>O<sub>4</sub>: an X-ray absorption spectroscopy study</div><div class="a">G. D. Dwivedi, <b>S. M. Kumawat</b>, Y. Y. Chin, J. W. Lynn, H. Chou</div><div class="j"><i>Journal of Alloys and Compounds</i> 981, 173651</div></div><a class="lnk" href="https://doi.org/10.1016/j.jallcom.2024.173651" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1039/d3tc01734f" data-date="2023-08-01"><span class="yr">2023</span><div><div class="t">Switching of dominant magnetic exchange interactions between tetrahedral–octahedral and octahedral–octahedral sites in (Mn<sub>1-x</sub>Cr<sub>x</sub>)<sub>3</sub>O<sub>4</sub> spinels</div><div class="a">G. D. Dwivedi, T. W. Yen, <b>S. M. Kumawat</b>, C. W. Wang, D. C. Kakarla, A. Tiwari, H. D. Yang, S. M. Huang, C. M. Chung, S. J. Sun, H. Chou</div><div class="j"><i>Journal of Materials Chemistry C</i> 11, 11312–11324</div></div><a class="lnk" href="https://doi.org/10.1039/D3TC01734F" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1021/acs.jpcc.2c08620" data-date="2023-04-13"><span class="yr">2023</span><div><div class="t">Magnetic field enhancement in critical current and possible triplet superconductivity in LSMO/YBCO/LSMO heterostructures</div><div class="a"><b>S. M. Kumawat</b>, G. D. Dwivedi, P. F. Su, W. S. Shyu, Y. H. Chien, P. W. Su, C. M. Chung, N. D. B. Fernandez, S. J. Sun, C. H. Hsu, S. Yang, H. Chou</div><div class="j"><i>The Journal of Physical Chemistry C</i> 127, 6861–6872</div></div><a class="lnk" href="https://doi.org/10.1021/acs.jpcc.2c08620" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1016/j.jallcom.2022.165777" data-date="2022-10-25"><span class="yr">2022</span><div><div class="t">Possible half-metallicity and suppressed double-exchange interaction in spinel Mn<sub>2.4</sub>Ni<sub>0.6</sub>O<sub>4</sub>: a Ni-substitution effect</div><div class="a"><b>S. M. Kumawat</b>, G. D. Dwivedi, T. W. Yen, D. C. Kakarla, A. Tiwari, S. M. Huang, S. J. Sun, H. D. Yang, H. Chou</div><div class="j"><i>Journal of Alloys and Compounds</i> 919, 165777</div></div><a class="lnk" href="https://doi.org/10.1016/j.jallcom.2022.165777" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1016/j.materresbull.2022.111928" data-date="2022-10-01"><span class="yr">2022</span><div><div class="t">Understanding the structural behaviors and abrupt enhancement in magnetic ordering temperature of Fe-substituted Mn<sub>3</sub>O<sub>4</sub></div><div class="a"><b>S. M. Kumawat</b>, G. D. Dwivedi, Y. H. Chien, P. F. Su, Z. H. Huang, H. Chou</div><div class="j"><i>Materials Research Bulletin</i> 154, 111928</div></div><a class="lnk" href="https://doi.org/10.1016/j.materresbull.2022.111928" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1088/1361-648x/ac28c3" data-date="2021-12-16"><span class="yr">2021</span><div><div class="t">Understanding the correlation between orbital degree of freedom, lattice-striction, and magneto-dielectric coupling in ferrimagnetic Mn<sub>1.5</sub>Cr<sub>1.5</sub>O<sub>4</sub></div><div class="a">G. D. Dwivedi, <b>S. M. Kumawat</b>, T.-W. Yen, C. W. Wang, D. C. Kakarla, A. G. Joshi, H. D. Yang, S.-M. Huang, H. Chou</div><div class="j"><i>Journal of Physics: Condensed Matter</i> 33, 505802</div></div><a class="lnk" href="https://doi.org/10.1088/1361-648X/ac28c3" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1016/j.apsusc.2021.151131" data-date="2021-12-15"><span class="yr">2021</span><div><div class="t">Correlating X-ray absorption spectra and ultraviolet photoelectron spectra to understand magnetic and transport properties of charge-ordered perovskite manganites</div><div class="a">G. D. Dwivedi, <b>S. M. Kumawat</b>, W. S. Shyu, Y. H. Chien, P. F. Su, Z. H. Huang, H. Chou, S. Chatterjee</div><div class="j"><i>Applied Surface Science</i> 569, 151131</div></div><a class="lnk" href="https://doi.org/10.1016/j.apsusc.2021.151131" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1063/1.5145185" data-date="2020-05-04"><span class="yr">2020</span><div><div class="t">Magnetic frustration induced liquid-like short-range ordering in cubic Mn<sub>1.5</sub>Cr<sub>1.5</sub>O<sub>4</sub></div><div class="a">G. D. Dwivedi, C.-W. Wang, <b>S. M. Kumawat</b>, H. Chou</div><div class="j"><i>Applied Physics Letters</i> 116, 182406</div></div><a class="lnk" href="https://doi.org/10.1063/1.5145185" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1063/1.5113365" data-date="2019-07-01" data-type="proc"><span class="yr">2019</span><div><div class="t">Neutron diffraction studies on temperature-driven crystallographic anisotropy in FeVO<sub>4</sub> multiferroic: evidence of strong magnetostructural correlations</div><div class="a">A. Tiwari, <b>S. M. Kumawat</b>, S. Rayaprol, A. Dixit</div><div class="j"><i>AIP Conference Proceedings</i> 2115, 030526 (DAE Solid State Physics Symposium)</div></div><a class="lnk" href="https://doi.org/10.1063/1.5113365" target="_blank" rel="noopener">DOI ↗</a></div>
+      <div class="pub" data-doi="10.1088/2053-1591/aaa804" data-date="2018-02-01"><span class="yr">2018</span><div><div class="t">Enhancement in photocatalytic response of inorganic–organic BiVO<sub>4</sub>/C<sub>3</sub>N<sub>4</sub> composite system</div><div class="a">B. Purohit, <b>S. M. Kumawat</b>, A. Dixit</div><div class="j"><i>Materials Research Express</i> 5, 024001</div></div><a class="lnk" href="https://doi.org/10.1088/2053-1591/aaa804" target="_blank" rel="noopener">DOI ↗</a></div>
+     </div>
+      <div class="more-pubs"><span>New papers appear here automatically. * equal contribution.</span><a href="https://scholar.google.com/citations?user=quTwk7AAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile ↗</a></div>
     </div>
   </section>
 
@@ -483,6 +488,7 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
       <div class="card list-card">
         <h3>Conferences, schools &amp; talks</h3>
         <ul class="ilist">
+          <li><span class="y">2026</span><span>DPG Spring Meeting of the Condensed Matter Section (SKM), Dresden, Germany</span></li>
           <li><span class="y">2025</span><span>APS Global Physics Summit (March Meeting), Anaheim, USA</span></li>
           <li><span class="y">2024</span><span>International Conference on Magnetism (ICM), Bologna, Italy</span></li>
           <li><span class="y">2023</span><span>Speaker, TWIN Buddy Talks, NSYSU: applying for NSTC grants for international conferences, and preparing a Ph.D. oral defense</span></li>
@@ -505,6 +511,7 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
         <a href="mailto:kumawat123sagar@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><small>Email</small>kumawat123sagar@gmail.com</span></a>
         <a href="https://www.linkedin.com/in/sagar-mal-kumawat-509b05a8/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.16-.02-2.65-1.61-2.65-1.62 0-1.87 1.26-1.87 2.56v4.93h-4z"/></svg><span><small>LinkedIn</small>sagar-mal-kumawat</span></a>
         <a href="https://scholar.google.com/citations?user=quTwk7AAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9.5l4 2.36V17l7 4 7-4v-5.14l2-1.18V17h2V9.5zm0 2.3 7.07 4.2L12 13.7 4.93 9.5zM7 13.04l5 2.96 5-2.96v2.8l-5 2.86-5-2.86z"/></svg><span><small>Google Scholar</small>Publications &amp; citations</span></a>
+        <a href="Sagar-Mal-Kumawat-CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg><span><small>Curriculum vitae</small>Download CV (PDF)</span></a>
       </div>
     </div>
   </section>
@@ -532,5 +539,6 @@ footer{padding:40px 0 48px;color:var(--muted);font-size:.86rem;text-align:center
   }
 })();
 </script>
+<script src="pubs.js" defer></script>
 </body>
 </html>
